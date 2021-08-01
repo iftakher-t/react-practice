@@ -21,7 +21,7 @@ import React from 'react';
 //     )
 // }
 
-// 3rd approach 
+// 3rd approach  // props is a object
 const Greet = (props) => {
     return <h1>Hello {props.name} --- age: {props.age}...children: {props.children} </h1>
 }

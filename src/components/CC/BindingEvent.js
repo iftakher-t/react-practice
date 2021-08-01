@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
-class BindingEventComp extends Component {
+class BindingEvent extends Component {
+
     constructor() {
         super();
         this.state = {
@@ -11,24 +12,21 @@ class BindingEventComp extends Component {
     }
 
     // 1, 2, 3
-    // countChangeHandler() {
+    countChangeHandler() {
     //     this.setState({
     //         count: this.state.count + 5
     //     })
-    //     // this.setState(prevState=> ({
-    //     //     count: prevState.count + 5
-    //     // }))
-    // }
+        this.setState( prevState => ({  // this is good way
+            count: prevState.count + 5
+        }))
+    }
 
     // 4
-    countChangeHandler = () => {
-        this.setState({
-            count: this.state.count + 5
-        })
-        // this.setState(prevState=> ({
-        //     count: prevState.count + 5
-        // }))
-    }
+    // countChangeHandler = () => {
+    //     this.setState({
+    //         count: this.state.count + 5
+    //     })
+    // }
 
 
     render() {
@@ -38,15 +36,15 @@ class BindingEventComp extends Component {
             {/* 1 */}
             {/* <button onClick={this.countChangeHandler.bind(this)}>Click Me</button> */}
             {/* 2 */}
-            {/* <button onClick={()=> this.countChangeHandler()}>Click Me</button> */}
+            <button onClick={()=> this.countChangeHandler()}>Click Me</button>
             {/* 3 */}
             {/* <button onClick={this.countChangeHandler}>Click Me</button> */}
             {/* 4 */}
-            <button onClick={this.countChangeHandler}>Click Me</button>
+            {/* <button onClick={this.countChangeHandler}>Click Me</button> */}
             </div>
         )
     }
 }
 
-export default BindingEventComp;
+export default BindingEvent;
 
