@@ -1,0 +1,13 @@
+
+.primary{
+    color:lime ;
+}
+
+.dark{
+    color:white ;
+    background-color: black;
+}
+
+.font-xl{
+    font-size: 72px;
+}
