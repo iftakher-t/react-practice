@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import ChildComp from './ChildComp'
 
-export default class ParentComps extends Component {
+export default class GreetParent extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
                  parentName : 'Parent'
              }
-
        this.greetName = this.greetName.bind(this)
     }
     

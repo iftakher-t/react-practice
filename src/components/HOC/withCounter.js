@@ -1,26 +1,30 @@
-import React, { Component } from 'react';
+import React ,{ Component } from 'react'
 
-const withCounter = (OriginalComponent) =>{
-
-class NewComponent extends Component{
+const withCounter = (OriginalComp) =>{
+class NewComp extends Component{
     constructor(props){
         super(props)
-        this.state = {
-            count : 0
+
+        this.state = { count: 0 }
+    }
+
+Increment = () => {
+this.setState( PrevState => {
+  return {count: PrevState.count + 1 }
+
+        })
+    }
+
+    render(){
+        return <OriginalComp 
+        count={ this.state.count } 
+        Increment = {this.Increment}
+        {...this.props}
+        />
         }
     }
 
-    increment(){
-        this.setState((prevState) =>(
-           { count : prevState.count + 1})
-        )
-    }
-    render(){
-        return  < OriginalComponent count ={ this.state.count} increment = {this.increment}/>
-    }
-}
-return NewComponent
-
+    return NewComp
 }
 
-export default withCounter() 
+export default withCounter

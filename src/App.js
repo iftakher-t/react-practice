@@ -3,36 +3,56 @@ import './App.css';
 
 // import Greet from './components/CC/Greet';
 // import InlineCss from './components/FC/InlineCss';
-import FormHandle from './components/CC/FormHandle';
+// import RefsDemo from './components/Refs/RefsDemo';
+// import ParentComp from './components/PureComp/ParentComp';
+// import FormHandle from './components/CC/FormHandle';
 // import Stylesheet from './components/FC/Stylesheet';
 // import ListRenderComp from './components/FC/ListRenderComp';
 // import UserGreeting from './components/CC/UserGreeting';
-// import ParentComps from './components/CC/ParentComps';
+// import GreetParent from './components/CC/GreetParent';
 // import CountreState from './components/CC/CountreState';
 // import StateClass from './components/CC/StateClass';
-// import ClickCounter from './components/ClickCounter';
-// import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/HOC/ClickCounter';
+// import HoverCounter from './components/HOC/HoverCounter';
+import ClickCounterTwo from './components/RenderProps/ClickCounterTwo';
+import HoverCounterTwo from './components/RenderProps/HoverCounterTwo';
+// import User from './components/RenderProps/User';
+import Counter from './components/RenderProps/Counter';
+
 
 function App() {
   return (
-    <Provider 
+    // <Provider 
     <div className="App">
 
+      <Counter>
+          { (count, Increment) => (
+              <ClickCounterTwo count={count} Increment={Increment} /> 
+          )}
+        </Counter> 
+        
+        <Counter>
+      { (count, Increment) => (
+              <HoverCounterTwo count={count} Increment={Increment} /> 
+          )}
+    </Counter> 
 
 
+      {/* <ClickCounterTwo /> 
+      <HoverCounterTwo />  
+      <User name={ (isLoggedIn) => isLoggedIn ? "Iftakher" : "Guest" } />  RenderProps */}
 
+      {/* <ClickCounter name='Iftakher' age={37} /> 
+      <HoverCounter /> */}
 
-
-
-      {/* <ClickCounter /> */}
-      {/* <HoverCounter /> */}
-
-      <FormHandle  />
+      {/* <RefsDemo  /> */}
+      {/* <ParentComp  /> */}
+      {/* <FormHandle  /> */}
       {/* <InlineCss  /> */}
       {/* <Stylesheet primary = {false}  /> */}
       {/* <ListRenderComp /> */}
       {/* <UserGreeting /> */}
-      {/* <ParentComps /> */}
+      {/* <GreetParent /> */}
       {/* <CountreState /> */}
       {/* <StateClass /> */}
       {/* <Greet name="Rok" age={24}> Nouman </Greet> */}
