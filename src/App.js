@@ -14,10 +14,12 @@ import './App.css';
 // import StateClass from './components/CC/StateClass';
 // import ClickCounter from './components/HOC/ClickCounter';
 // import HoverCounter from './components/HOC/HoverCounter';
-import ClickCounterTwo from './components/RenderProps/ClickCounterTwo';
-import HoverCounterTwo from './components/RenderProps/HoverCounterTwo';
+// import ClickCounterTwo from './components/RenderProps/ClickCounterTwo';
+// import HoverCounterTwo from './components/RenderProps/HoverCounterTwo';
 // import User from './components/RenderProps/User';
-import Counter from './components/RenderProps/Counter';
+// import Counter from './components/RenderProps/Counter';
+// import Color from './components/ErrorHandling/AllColor';
+import ParentComp from './components/ContextApi/ParentComp';
 
 
 function App() {
@@ -25,7 +27,10 @@ function App() {
     // <Provider 
     <div className="App">
 
-      <Counter>
+        <ParentComp />
+        {/* <Color /> */}   {/* ErrorBoundary */}
+
+      {/* <Counter>
           { (count, Increment) => (
               <ClickCounterTwo count={count} Increment={Increment} /> 
           )}
@@ -35,7 +40,7 @@ function App() {
       { (count, Increment) => (
               <HoverCounterTwo count={count} Increment={Increment} /> 
           )}
-    </Counter> 
+      </Counter>  */}
 
 
       {/* <ClickCounterTwo /> 
