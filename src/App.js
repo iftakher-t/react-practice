@@ -19,15 +19,17 @@ import './App.css';
 // import User from './components/RenderProps/User';
 // import Counter from './components/RenderProps/Counter';
 // import Color from './components/ErrorHandling/AllColor';
-import ParentComp from './components/ContextApi/ParentComp';
+import Post from './components/httpAxios/Post';
+// import ParentComp from './components/ContextApi/ParentComp';
 
 
 function App() {
   return (
-    // <Provider 
-    <div className="App">
 
-        <ParentComp />
+    <div className="App">
+        <Post />
+
+        {/* <ParentComp /> */}
         {/* <Color /> */}   {/* ErrorBoundary */}
 
       {/* <Counter>
