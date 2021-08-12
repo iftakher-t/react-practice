@@ -13,14 +13,14 @@ class Main extends React.Component{
 
 
 
-    addTag=()=>{
-        let el = document.getElementById("tagSellect");
-       
+    addTag=(e)=>{
+        let el = document.getElementById("tagSellect").value;
+       console.log(el)
 
         this.setState({
             
         })
-
+    e.preventDefault()
     }
 
     render(){
@@ -33,8 +33,8 @@ class Main extends React.Component{
                 </div>
                 <div className="dropdownContainer">
                     <form>
-                    <select className="form-control" id="tagSellect" >
-                       {tags.length ? tags.map( tag => <option key={tag} value="volvo" >{ tag }</option>) : null}
+                    <select className="form-control" id="tagSellect"  >
+                       {tags.length ? tags.map( tag => <option key={tag} value= {tag} >{ tag }</option>) : null}
 
                     </select>
                     <button onClick={this.addTag}>Add</button>
