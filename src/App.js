@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import App1 from './components/project1/App1';
+
 // import Greet from './components/CC/Greet';
 // import InlineCss from './components/FC/InlineCss';
 // import RefsDemo from './components/Refs/RefsDemo';
@@ -19,7 +21,7 @@ import './App.css';
 // import User from './components/RenderProps/User';
 // import Counter from './components/RenderProps/Counter';
 // import Color from './components/ErrorHandling/AllColor';
-import Post from './components/httpAxios/Post';
+// import Post from './components/httpAxios/Post';
 // import ParentComp from './components/ContextApi/ParentComp';
 
 
@@ -27,9 +29,11 @@ function App() {
   return (
 
     <div className="App">
-        <Post />
 
-        {/* <ParentComp /> */}
+
+        <App1 />
+        {/* <ParentComp /> */}  {/* Contexapi */}
+        {/* <Post />  {/* axios */}
         {/* <Color /> */}   {/* ErrorBoundary */}
 
       {/* <Counter>

@@ -10,10 +10,10 @@ class Post extends React.Component{
             errMsg:''
         }
     }
-    
+
     componentDidMount(){
         axios.get('https://jsonplaceholder.typicode.com/posts')
-        .than( response =>{
+        .then( response =>{
             console.log(response)
             this.setState({
                 post:response.data
@@ -29,8 +29,11 @@ render(){
     const {post} = this.state
     return (
         <div>
-            {post.length ? post.map( post => <div key={post.id}> {post.title} </div>): null}
+            <h2> All post</h2>
+            {
+            post.length ? post.map( post => <div key={post.id}> <b> Title: </b> {post.title} </div>): null}
         </div>
+
     )
 }
 }

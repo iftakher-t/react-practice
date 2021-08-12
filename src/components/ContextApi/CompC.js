@@ -13,6 +13,7 @@ import {UserConsumer} from './Context/UserContext'
                             value.isLoggedIn ? <h1> Welcome {value.name}</h1> : <h1>Please LogIn</h1>
                         }
                         <button onClick={ () => value.login()}> Login</button>
+                        <br/>
                         <button onClick={ () => value.logout()}> Logout</button>
                         </>
                     )
