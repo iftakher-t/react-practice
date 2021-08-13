@@ -13,7 +13,7 @@ class Main extends React.Component{
     }
     removeTag =(deletedTag)=>{
         console.log('Index' ,deletedTag)
-        let restTags = this.state.dispTags.filter( el => el!== deletedTag )
+        let restTags = this.state.dispTags.filter( (el, i) => i !== deletedTag )
         // let restTags = this.state.dispTags.splice(deletedTag, 1 )
          this.setState({ 
              dispTags: restTags
