@@ -1,13 +1,16 @@
 import React from 'react'
 
-function Tag() {
+function Tag(props) {
 
-return (
-        <div className="tag">
-            <h3>Tag3 </h3>
+    const{value}= props
+
+    return (
+        value.length ? value.map( (dispTag, index) => (
+        <div className="tag" key={index} >
+            <h3>{dispTag }</h3>
             <button>x</button>
-        </div>
-    )
+        </div>)) : null
+        )
 }
 
 export default Tag 

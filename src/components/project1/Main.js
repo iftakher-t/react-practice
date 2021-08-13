@@ -1,12 +1,14 @@
 import React from 'react'
 import Tag from './Tag'
+import Random from './Random'
 
 class Main extends React.Component{
     constructor(props) {
         super(props)
     
         this.state = {
-            tags:['Tag1', 'Tag2', 'Tag3', 'Tag4','Tag5']
+            tags:['Tag1', 'Tag2', 'Tag3', 'Tag4','Tag5'],
+            dispTags:['Tag1']
         }
     }
     
@@ -16,20 +18,22 @@ class Main extends React.Component{
     addTag=(e)=>{
         let el = document.getElementById("tagSellect").value;
        console.log(el)
-
-        this.setState({
-            
+       
+        this.setState({ 
+            dispTags: this.state.dispTags.concat(el)
         })
+
     e.preventDefault()
     }
 
     render(){
-        const {tags} = this.state
-
+        const {tags, dispTags } = this.state
+        console.log('dispTags', dispTags)
         return (
             <div className="main-container"> 
+            {/* <Random /> */}
                 <div className="tagContainer">
-                    <Tag />
+                    <Tag value = {dispTags} />
                 </div>
                 <div className="dropdownContainer">
                     <form>
