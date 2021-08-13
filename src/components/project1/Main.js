@@ -1,6 +1,6 @@
 import React from 'react'
 import Tag from './Tag'
-import Random from './Random'
+// import Random from './Random'
 
 class Main extends React.Component{
     constructor(props) {
@@ -8,40 +8,34 @@ class Main extends React.Component{
     
         this.state = {
             tags:['Tag1', 'Tag2', 'Tag3', 'Tag4','Tag5'],
-            dispTags:['Tag1']
+            dispTags:[]
         }
     }
-    
+    removeTag =(deletedTag)=>{
+        console.log('Index' ,deletedTag)
+        let restTags = this.state.dispTags.filter( el => el!== deletedTag )
+        // let restTags = this.state.dispTags.splice(deletedTag, 1 )
+         this.setState({ 
+             dispTags: restTags
+         })
+     }
 
-
-    addTag=(e)=>{
+    addTag =(e)=>{
         let el = document.getElementById("tagSellect").value;
-       console.log(el)
-       
         this.setState({ 
             dispTags: this.state.dispTags.concat(el)
         })
-
-    e.preventDefault()
-    }
-
-    removeTag=(e)=>{
-       
-        this.setState({ 
-            dispTags: this.state.dispTags.concat(el)
-        })
-
-    e.preventDefault()
+        e.preventDefault()
     }
 
     render(){
         const {tags, dispTags } = this.state
-        console.log('dispTags', dispTags)
         return (
             <div className="main-container"> 
-            {/* <Random /> */}
                 <div className="tagContainer">
-                    <Tag value = {dispTags} />
+                    <Tag 
+                        removeTag={this.removeTag}
+                        value = {dispTags} />
                 </div>
                 <div className="dropdownContainer">
                     <form>

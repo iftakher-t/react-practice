@@ -1,16 +1,20 @@
 import React from 'react'
 
-function Tag(props) {
+class Tag extends React.Component {
 
-    const{value}= props
 
+
+render(){
+    const{value}= this.props
     return (
         value.length ? value.map( (dispTag, index) => (
         <div className="tag" key={index} >
             <h3>{dispTag }</h3>
-            <button onClick={removeTag}>x</button>
+            <button onClick={this.props.removeTag.bind(null, dispTag)}>x</button>
         </div>)) : null
         )
 }
+}
 
+// 
 export default Tag 
