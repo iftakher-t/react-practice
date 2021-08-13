@@ -8,7 +8,7 @@ function Tag(props) {
         value.length ? value.map( (dispTag, index) => (
         <div className="tag" key={index} >
             <h3>{dispTag }</h3>
-            <button>x</button>
+            <button onClick={removeTag}>x</button>
         </div>)) : null
         )
 }
