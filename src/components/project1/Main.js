@@ -14,10 +14,18 @@ class Main extends React.Component{
     
 
 
-
     addTag=(e)=>{
         let el = document.getElementById("tagSellect").value;
        console.log(el)
+       
+        this.setState({ 
+            dispTags: this.state.dispTags.concat(el)
+        })
+
+    e.preventDefault()
+    }
+
+    removeTag=(e)=>{
        
         this.setState({ 
             dispTags: this.state.dispTags.concat(el)
