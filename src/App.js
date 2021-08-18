@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
+import PortfolioApp from './components/portfolio1/PortfolioApp';
 
-import App1 from './components/project1/App1';
+// import App1 from './components/project1/App1';
 
 // import Greet from './components/CC/Greet';
 // import InlineCss from './components/FC/InlineCss';
@@ -30,8 +31,8 @@ function App() {
 
     <div className="App">
 
-
-        <App1 />
+        <PortfolioApp />
+        {/* <App1 /> */}
         {/* <ParentComp /> */}  {/* Contexapi */}
         {/* <Post />  {/* axios */}
         {/* <Color /> */}   {/* ErrorBoundary */}
