@@ -1,7 +1,10 @@
 import React from 'react';
-import './App.css';
-import PortfolioApp from './components/portfolio1/PortfolioApp';
+import useStateCounter from './components/HooksComp/HookuseStateCounter';
 
+
+
+
+import PortfolioApp from './components/portfolio1/PortfolioApp';
 // import App1 from './components/project1/App1';
 
 // import Greet from './components/CC/Greet';
@@ -24,6 +27,9 @@ import PortfolioApp from './components/portfolio1/PortfolioApp';
 // import Color from './components/ErrorHandling/AllColor';
 // import Post from './components/httpAxios/Post';
 // import ParentComp from './components/ContextApi/ParentComp';
+// import PostForm from './components/httpAxios/PostForm';
+// import HookuseStateCounter from './components/HooksComp/HookuseStateCounter';
+import HookuseEffectCounter from './components/HooksComp/useEffect/HookUseEffectTitle';
 
 
 function App() {
@@ -31,9 +37,13 @@ function App() {
 
     <div className="App">
 
-        <PortfolioApp />
+
+        {/* <HookuseStateCounter /> */}
+        <HookuseEffectCounter />
+        {/* <PostForm /> */}
+        {/* <PortfolioApp /> */}
         {/* <App1 /> */}
-        {/* <ParentComp /> */}  {/* Contexapi */}
+        {/* <ParentComp />  Contexapi */}
         {/* <Post />  {/* axios */}
         {/* <Color /> */}   {/* ErrorBoundary */}
 

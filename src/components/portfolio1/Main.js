@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Poftfolio (){
+function Main (){
         return (
             <div className="grid"> 
                 <div className="tagContainer">
@@ -22,4 +22,4 @@ function Poftfolio (){
             )
     }
 
-export default Poftfolio 
+export default Main 

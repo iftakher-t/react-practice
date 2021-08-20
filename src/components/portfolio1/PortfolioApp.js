@@ -1,117 +1,121 @@
 import React from 'react'
-import styles from './css/style.css'; 
+import {IconContext} from 'react-icons'
+import styles from './css/style.css';
+import { FaTwitter,FaFacebook,FaSith,FaTelegramPlane,FaLinkedinIn,FaInstagram,FaUser,FaEnvelope,FaElementor,FaBlogger,FaContao } from "react-icons/fa";
 
 function PortfolioApp() {
 
 return (
     <div className = "grid">
 
-            <div className ="main">
-            <h2> Sumon Deo</h2>
-                <h3>Junior Web Developer</h3>
-            <p> I am experienced in leveraging agile frameworks to provide a 
+            <div className ="aboutme">
+            <h1> Sumon Deo</h1>
+                <h2>Junior Web Developer</h2>
+            <p> I am experienced in Express & React frameworks to provide a 
                 robust synopsis for high level overviews. Iterative approaches 
-                to corporate strategy foster collaborative thinking to further 
+                to corporate strategy foster collaborative strategy foster collaborativethinking to further 
                 the overall value proposition.</p>
-                <a href="#" className="button-portfolio"><i className="fa fa-user"></i>View Portfolio</a>
-                <a href="#" className="button-resume"><i className="fa fa-paper-plane"></i>View Resume</a>  
+                <a href="#" className="button-portfolio"><FaEnvelope />  View Portfolio</a>
+                <a href="#" className="button-resume"><FaElementor />  View Resume</a>  
             </div>
 
-            <div className="img-main"><img src="img/profile2.jpg" alt="Name" /></div>
+            <div className="img-main"><img src="/images/profile2.jpg" alt="Sumon Deo" /></div>
 
             <div className="blank"></div>
 
             <div className = "sidebar">
-            <h3>Sumon
-            <span className="text-primary">Deo</span>
-            </h3>
-            <div className="sidebar-img"><img src="img/profile.jpg" alt="Name" /></div>
+            <h2>Sumon Deo</h2>
+            <div className="sidebar-img"><img src= 'images/profile.jpg' alt="Sumon Deo" /></div>
             <p>
             I am experienced in leveraging agile frameworks to provide a 
-            robust synopsis for high level overviews.</p>
+            robust synopsis for overviews.</p>
+            <br />
             {/* <!-- social icon start --> */}
             <div className="social-icon">
-                <a href="#" className="fa fa-twitter"></a>
-                <a href="#" className="fa fa-linkedin"></a>
-                <a href="#" className="fa fa-facebook"></a>
-                <a href="#" className="fa fa-instagram"></a> 
+                <a href="#" className="fa fa-twitter"><FaTwitter color ='blue' size = '1.3rem' /></a>
+                <a href="#" className="fa fa-facebook"><FaFacebook color ='blue' /></a>
+                <a href="#" className="fa fa-instagram"><FaInstagram /></a>
+                <a href="#" className="fa fa-linkedin"><FaLinkedinIn /></a>
             </div>
             {/* <!-- social icon end --> */}
+
+            <br />
+            <hr />
                 <div className="sidebar-nav">
                     <ul>
                         <li>
-                            <a href="#about"><i className="fa fa-user"></i>About Me</a>
+                            <a className='active' href="#about"><FaUser />  About Me</a>
                         </li>
                         <li>
-                            <a href="#experience"><i className="fa fa-user"></i>Portfolio</a>
+                            <a href="#experience"><FaEnvelope />  Portfolio</a>
                         </li>
                         <li>
-                            <a href="#portfolio"><i className="fa fa-user"></i>Service</a>
+                            <a href="#portfolio"><FaSith />  Service</a>
                         </li>
                         <li>
-                            <a href="#skills"><i className="fa fa-file"></i>Resume</a>
+                            <a href="#skills"><FaElementor />  Resume</a>
                         </li>
                         <li>
-                            <a href="#awards"><i className="fa fa-user"></i>Blog</a>
+                            <a href="#awards"><FaBlogger />  Blog</a>
                         </li>
                         <li>
-                            <a href="#contact"><i className="fa fa-user"></i>Contact</a>
+                            <a href="#contact"><FaContao />  Contact</a>
                         </li>
                     </ul>
-                    <a href="#" className="button-hireme"><i className="fa fa-paper-plane"></i> Hire Me</a>  
+                    <a href="#" className="button-hireme"><FaTelegramPlane /> Hire Me</a>  
                 </div>
             </div>
 
         <div className="content1">
         <h1> what I do </h1>
         <p>
-        I am experienced in leveraging agile frameworks to provide a 
-        robust synopsis for high </p>
+        I am experienced in Express & React frameworks to provide a 
+        robust synopsis for high level overviews. frameworks to provide a 
+        robust synopsis for high. </p>
         </div>
 
         <div className="content2" >
-        <div className="logo"><img src="img/js.png" alt="Name" /></div>
+        <div className="logo"><img src="images/js.png" alt="Name" /></div>
         <h3>Vanilla JavaScript</h3>
 
         <p>
-        I am experienced in leveraging agile frameworks to provide a 
-        robust synopsis for high level overviews. Iterative approaches 
+        I am experienced in  agile frameworks 
+        robust synopsis for high level overviews. 
         to corporate strategy foster</p>
         </div>
 
 
         <div className="content3" >
         <div className="logo">
-            <img src="img/ang3.png" alt="angular" />
+            <img src="images/ang3.png" alt="angular" />
         </div>
         <h3> Angular React vue </h3>
         <p>
-            I am experienced in leveraging agile frameworks to provide a 
-            robust synopsis for high level overviews. Iterative approaches 
-            to corporate strategy foster</p>
+        I am experienced in  agile frameworks 
+        robust synopsis for high level overviews. 
+        to corporate strategy foster</p>
         </div>
 
         <div className="content4" >
             <div className="logo">
-                <img src="img/node.png" alt="node" />
+                <img src="images/node.png" alt="node" />
             </div>
             <h3>Node js</h3>
 
             <p>
-            I am experienced in leveraging agile frameworks to provide a 
-            robust synopsis for high level overviews. Iterative approaches 
-            to corporate strategy foster</p>
+        I am experienced in  agile frameworks 
+        robust synopsis for high level overviews. 
+        to corporate strategy foster</p>
         </div>
 
         <div className="content5" >
             <div className="logo">
-                <img src="img/python.jpg" alt="python" />
+                <img src="images/python.jpg" alt="python" />
             </div>
             <h3>Python & Django</h3>
-
             <p>
-            I am experienced in leveraging agile frameworks to provide a 
-            robust synopsis for high level overviews. Iterative approaches 
+            I am experienced in  agile frameworks 
+            robust synopsis for high level overviews. 
             to corporate strategy foster</p>
         </div>
 </div> 
