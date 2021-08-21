@@ -5,13 +5,12 @@ function HookuseEffectCounter (){
 
     // componentDidMount & componentDidUpdate
     useEffect( ()=>{
-        console.log('title')
         document.title = `You clicked ${count} times`
     })
 
     return( <div>
            <h2>  Count : {count} </h2>
-            <button onClick = { setCount( count + 1 ) }>Increment</button>
+            <button onClick = { ()=> setCount( count + 1 ) }>Increment</button>
         </div>
     )
 }

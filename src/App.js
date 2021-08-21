@@ -1,10 +1,7 @@
 import React from 'react';
-import useStateCounter from './components/HooksComp/HookuseStateCounter';
+// import useStateCounter from './components/HooksComp/HookuseStateCounter';
 
-
-
-
-import PortfolioApp from './components/portfolio1/PortfolioApp';
+// import PortfolioApp from './components/portfolio1/PortfolioApp';
 // import App1 from './components/project1/App1';
 
 // import Greet from './components/CC/Greet';
@@ -29,7 +26,10 @@ import PortfolioApp from './components/portfolio1/PortfolioApp';
 // import ParentComp from './components/ContextApi/ParentComp';
 // import PostForm from './components/httpAxios/PostForm';
 // import HookuseStateCounter from './components/HooksComp/HookuseStateCounter';
-import HookuseEffectCounter from './components/HooksComp/useEffect/HookUseEffectTitle';
+// import HookuseStateObject from './components/HooksComp/HookuseStateObject';
+// import HookuseStateArray from './components/HooksComp/HookuseStateArray';
+import HookuseStateTODO from './components/HooksComp/HookuseStateTODO';
+// import HookuseEffectCounter from './components/HooksComp/useEffect/HookUseEffectTitle';
 
 
 function App() {
@@ -39,7 +39,14 @@ function App() {
 
 
         {/* <HookuseStateCounter /> */}
-        <HookuseEffectCounter />
+        {/* <HookuseEffectCounter /> */}
+        {/* <HookuseStateObject /> */}
+        {/* <HookuseStateArray /> */}
+        <HookuseStateTODO />
+
+
+
+
         {/* <PostForm /> */}
         {/* <PortfolioApp /> */}
         {/* <App1 /> */}

@@ -1,5 +1,5 @@
 import React from 'react'
-import {IconContext} from 'react-icons'
+// import {IconContext} from 'react-icons'
 import styles from './css/style.css';
 import { FaTwitter,FaFacebook,FaSith,FaTelegramPlane,FaLinkedinIn,FaInstagram,FaUser,FaEnvelope,FaElementor,FaBlogger,FaContao } from "react-icons/fa";
 
@@ -15,7 +15,7 @@ return (
                 robust synopsis for high level overviews. Iterative approaches 
                 to corporate strategy foster collaborative strategy foster collaborativethinking to further 
                 the overall value proposition.</p>
-                <a href="#" className="button-portfolio"><FaEnvelope />  View Portfolio</a>
+                <a href="javascript:void(0)" className="button-portfolio"><FaEnvelope />  View Portfolio</a>
                 <a href="#" className="button-resume"><FaElementor />  View Resume</a>  
             </div>
 
@@ -32,7 +32,7 @@ return (
             <br />
             {/* <!-- social icon start --> */}
             <div className="social-icon">
-                <a href="#" className="fa fa-twitter"><FaTwitter color ='blue' size = '1.3rem' /></a>
+                <a href="facebooklink" className="fa fa-twitter"><FaTwitter color ='blue' size = '1.3rem' /></a>
                 <a href="#" className="fa fa-facebook"><FaFacebook color ='blue' /></a>
                 <a href="#" className="fa fa-instagram"><FaInstagram /></a>
                 <a href="#" className="fa fa-linkedin"><FaLinkedinIn /></a>
