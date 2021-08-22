@@ -28,8 +28,10 @@ import React from 'react';
 // import HookuseStateCounter from './components/HooksComp/HookuseStateCounter';
 // import HookuseStateObject from './components/HooksComp/HookuseStateObject';
 // import HookuseStateArray from './components/HooksComp/HookuseStateArray';
-import HookuseStateTODO from './components/HooksComp/HookuseStateTODO';
+// import HookuseStateTODO from './components/HooksComp/HookuseStateTODO';
 // import HookuseEffectCounter from './components/HooksComp/useEffect/HookUseEffectTitle';
+// import UseEffectCleanUp from './components/HooksComp/useEffect/UseEffectCleanUp';
+import MouseContainer from './components/HooksComp/useEffect/MouseContainer';
 
 
 function App() {
@@ -42,7 +44,10 @@ function App() {
         {/* <HookuseEffectCounter /> */}
         {/* <HookuseStateObject /> */}
         {/* <HookuseStateArray /> */}
-        <HookuseStateTODO />
+        {/* <HookuseStateTODO /> */}
+
+        {/* <UseEffectCleanUp /> */}
+        <MouseContainer />
 
 
 
