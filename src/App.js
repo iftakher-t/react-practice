@@ -31,7 +31,11 @@ import React from 'react';
 // import HookuseStateTODO from './components/HooksComp/HookuseStateTODO';
 // import HookuseEffectCounter from './components/HooksComp/useEffect/HookUseEffectTitle';
 // import UseEffectCleanUp from './components/HooksComp/useEffect/UseEffectCleanUp';
-import MouseContainer from './components/HooksComp/useEffect/MouseContainer';
+// import MouseContainer from './components/HooksComp/useEffect/MouseContainer';
+// import IntervalClasscounter from './components/HooksComp/useEffect/IntervalClasscounter';
+// import IntervalHookCounter from './components/HooksComp/useEffect/IntervalHookCounter';
+// import DataFetching from './components/HooksComp/useEffect/DataFetching';
+import CounterReducer from './components/HooksComp/useReducer/CounterReducer';
 
 
 function App() {
@@ -47,9 +51,11 @@ function App() {
         {/* <HookuseStateTODO /> */}
 
         {/* <UseEffectCleanUp /> */}
-        <MouseContainer />
-
-
+        {/* <MouseContainer /> */}
+        {/* <IntervalClasscounter /> */}
+        {/* <IntervalHookCounter /> */}
+        {/* <DataFetching /> */}
+            <CounterReducer />
 
 
         {/* <PostForm /> */}
