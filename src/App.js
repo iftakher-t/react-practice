@@ -1,4 +1,8 @@
 import React from 'react';
+import ParentComp from './components/HooksComp/UseReducerContext/ParentComp';
+
+// import CounterOne from './components/HooksComp/UseReducer/CounterOne';
+// import CounterThree from './components/HooksComp/UseReducer/CounterThree';
 // import useStateCounter from './components/HooksComp/HookuseStateCounter';
 
 // import PortfolioApp from './components/portfolio1/PortfolioApp';
@@ -35,15 +39,14 @@ import React from 'react';
 // import IntervalClasscounter from './components/HooksComp/useEffect/IntervalClasscounter';
 // import IntervalHookCounter from './components/HooksComp/useEffect/IntervalHookCounter';
 // import DataFetching from './components/HooksComp/useEffect/DataFetching';
-import CounterReducer from './components/HooksComp/useReducer/CounterReducer';
-
 
 function App() {
   return (
 
     <div className="App">
-
-
+            <ParentComp /> 
+        {/* <CounterOne /> */}
+        {/* <CounterThree /> */}
         {/* <HookuseStateCounter /> */}
         {/* <HookuseEffectCounter /> */}
         {/* <HookuseStateObject /> */}
@@ -55,7 +58,7 @@ function App() {
         {/* <IntervalClasscounter /> */}
         {/* <IntervalHookCounter /> */}
         {/* <DataFetching /> */}
-            <CounterReducer />
+
 
 
         {/* <PostForm /> */}

@@ -1,6 +1,8 @@
 import React, {useReducer}from 'react'
 
-const initialValue = 0
+const inititalState = {
+    firstCounter :0
+}
 const reducer = (state, action)=>{
     switch(action){
         case 'increment': 
@@ -8,25 +10,24 @@ const reducer = (state, action)=>{
         case 'decrement': 
             return state +1
         case 'reset': 
-            return initialValue
+            return inititalState
         default:
             return state
     }
 }
 
-
-function CounterReducer() {
+function CounterTwo() {
     
     const [count, dispatch] = useReducer(reducer, inititalState);
 
     return (
         <div>
-            <div> count - {count}</div>
-            <button onClick={()=> dispatch('íncrement')}>Increment</button>
+            <div> count : { count.firstCounter }</div>
+            <button onClick={()=> dispatch('increment')}>Increment</button>
             <button onClick={()=> dispatch('decrement')}>Decrement</button>
             <button onClick={()=> dispatch('reset')}>Reset</button>
         </div>
     )
 }
 
-export default CounterReducer
+export default CounterTwo
