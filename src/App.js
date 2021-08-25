@@ -1,5 +1,6 @@
 import React from 'react';
-import ParentComp from './components/HooksComp/UseReducerContext/ParentComp';
+import ParentComp from './components/HooksComp/CallBackHook/ParentComp';
+// import ParentComp from './components/HooksComp/UseReducerContext/ParentComp';
 
 // import CounterOne from './components/HooksComp/UseReducer/CounterOne';
 // import CounterThree from './components/HooksComp/UseReducer/CounterThree';
@@ -44,7 +45,8 @@ function App() {
   return (
 
     <div className="App">
-            <ParentComp /> 
+      <ParentComp />
+            {/* <ParentComp />  */}
         {/* <CounterOne /> */}
         {/* <CounterThree /> */}
         {/* <HookuseStateCounter /> */}
